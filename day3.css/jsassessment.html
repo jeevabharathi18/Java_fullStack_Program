@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+    </style>
+    <script>
+        for (var  limit = 2; limit <=50; limit++) {
+             var PN = true;
+
+             for (var i = 2; i <=limit; i++) {
+
+                if (limit%i == 0 && i != limit) {
+                    PN = false
+                }
+             }
+             if (PN == true) {
+
+                document.write("<br>prime number : " +limit);
+             }
+        }
+    </script>
+</body>
+</html>

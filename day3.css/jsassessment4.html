@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Funtions</title>
+  <style>
+    
+  </style>
+  <script>
+    function Strings() {
+      let originalText = document.getElementById("original").textContent;
+      let slicedText = originalText.slice(7, 12); 
+      let replacedText = originalText.replace("world", "JavaScript"); 
+      let upperCaseText = originalText.toUpperCase(); 
+      let lowerCaseText = originalText.toLowerCase(); 
+      let concatenatedText = originalText.concat(" and beyond!");
+      let repeatText = originalText.repeat(7);
+      let substringText = originalText.substring(1,8);
+      document.getElementById("sliced").textContent = "Sliced Text: " + slicedText;
+      document.getElementById("replaced").textContent = "Replaced Text: " + replacedText;
+      document.getElementById("upper").textContent = "Uppercase Text: " + upperCaseText;
+      document.getElementById("lower").textContent = "Lowercase Text: " + lowerCaseText;
+      document.getElementById("concatenated").textContent = "Concatenated Text: " + concatenatedText;
+      document.getElementById("repeat").textContent = "Repeat Text: " + repeatText;
+      document.getElementById("substring").textContent = "Substring: " + substringText;
+    
+    }
+  </script>
+</head>
+<body onload="Strings()">
+  <div id="original">Hello, world!</div>
+  
+  <p id="sliced"></p>
+  <p id="replaced"></p>
+  <p id="upper"></p>
+  <p id="lower"></p>
+  <p id="concatenated"></p>
+  <p id ="repeat"></p>
+  <p id = "substring"></p>
+</body>
+</html>
