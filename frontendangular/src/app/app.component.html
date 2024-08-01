@@ -1,0 +1,85 @@
+<!-- <h1>Interpolation Example</h1>
+<b>
+  <label for="name">My Name:</label>
+  <input id="name" type="text" value="{{ name }}" />
+  <br>
+  <label for="age">My Age:</label>
+  <input id="age" type="text" value="{{ age }}" />
+  <br>
+  <label for="email">Email:</label>
+  <input id="email" type="text" value="{{ email }}" />
+  <br>
+  <label for="addition">Addition:</label>
+  <input id="addition" type="text" value="{{ getAddition(10, 20) }}" />
+</b>
+
+<h1>Property Binding Example</h1>
+<font [color]="txtColor">
+  <label for="name">My Name:</label>
+  <input id="name" type="text" [value]="name" />
+  <br>
+  <label for="age">My Age:</label>
+  <input id="age" type="text" [value]="age" />
+  <br>
+  <label for="email">Email:</label>
+  <input id="email" type="text" [value]="email" />
+  <br>
+  <label for="addition">Addition:</label>
+  <input id="addition" type="text" [value]="getAddition(10, 20)" />
+  <br>
+  <label for="multiplication">Multiplication:</label>
+  <input id="multiplication" type="text" [value]="getmul(20, 20)" />
+</font>
+
+<br>
+<br>
+
+<h1>Event Binding</h1>
+<br>
+<button (click)="changeName()">Change</button><br>
+<img [src]="img" width="300" height="200" alt="no">
+
+<h1>Two Way Data Binding Example</h1>
+Enter Your First Name <input type="text" [(ngModel)]="fname" />
+<br>
+<b>Welcome {{ fname }}</b>
+
+<h1>Angular Structural Directives</h1>
+<button (click)="changeFlag()">Show or Hide Div</button>
+<div *ngIf="flag" [ngStyle]="myStyle">
+  <ul>
+    <li *ngFor="let vec of vehicles" (click)="setSelectedItem(vec)">{{ vec }}</li>
+  </ul>
+  <br>
+  <b [ngClass]="myClass">You have selected: {{ selectedVehicle }}</b>
+  <br>
+  <div [ngSwitch]="selectedVehicle">
+    <font color="green" *ngSwitchCase="'TwoWheeler'">Bike</font>
+    <font color="green" *ngSwitchCase="'ThreeWheeler'">Auto</font>
+    <font color="green" *ngSwitchCase="'FourWheeler'">Car</font>
+    <font color="green" *ngSwitchDefault>Invalid</font>
+  </div>
+  <br>
+  <button (click)="changeClass()">Change Class</button>
+</div>
+
+<br>
+<br>
+
+<h1>Additional Table</h1>
+<table width="80%" align="center">
+  <tr>
+    <th><a routerLink="/home">Home</a></th>
+    <th><a routerLink="/contact">Contact</a></th>
+    <th><a routerLink="/about">About Us</a></th>
+  </tr>
+</table>
+<br>
+<div>
+  This is place to load new components.
+  <router-outlet></router-outlet>
+</div> -->
+
+<h1>
+  Addition : {{ sum }}
+</h1>
